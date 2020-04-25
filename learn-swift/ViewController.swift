@@ -13,23 +13,54 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-        var i:UInt = 0;
         
-        while i < 10 {
-           print(i)
-           i+=1
+        let array1 = [Int]()
+        print(array1)
+        
+        let array2:[Int] = [Int]()
+        print(array2)
+        
+        let array3:[Int] = Array()
+        print(array3)
+
+        //--------
+        
+        
+        let array4 = [1,2,3]
+        print(array4)
+    
+        let array5 = ["a","b","c"]
+        print(array5)
+        
+        let array6:[Any] = ["a",1,true]
+        print(array6)
+        
+       //--------
+        
+        let array7 = Array(arrayLiteral: "adsf")
+        print(array7)
+        
+        let array8:[String] = Array(arrayLiteral: "adsf")
+        print(array8)
+        
+        let array9 = Array(repeating: 2, count: 3)
+        print(array9)
+        
+        //--------
+        
+        let array10 = [1,2]
+        if !array10.isEmpty {
+            print("not empty")
         }
-
-        print("--")
         
-        // do while
         
-        repeat{
-            print(i)
-            i+=1
-        } while i<12
-
+        var array11 = [3,2]
+        array11.append(1)
+        print(array11)
+        
+        
+        
+        
 
     }
 
