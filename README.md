@@ -8,3 +8,5 @@ lesson-3 switch case
          switch case condition
          
 lesson-4
+
+lesson 5 string, string methods
