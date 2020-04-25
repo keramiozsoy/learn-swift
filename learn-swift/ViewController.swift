@@ -14,49 +14,41 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let array1 = [Int]()
-        print(array1)
+        let dic = [Int:String]()
+        print(dic)
         
-        let array2:[Int] = [Int]()
-        print(array2)
+        let dic1:[Int:String] = [Int:String]()
+        print(dic1)
         
-        let array3:[Int] = Array()
-        print(array3)
-
-        //--------
+        let dic2:[String:String] = ["key1":"value1",
+                                    "key2":"value2"]
+        print(dic2)
+        print(dic2.count)
+        print(dic2.keys)
+        print(dic2.values)
         
-        
-        let array4 = [1,2,3]
-        print(array4)
-    
-        let array5 = ["a","b","c"]
-        print(array5)
-        
-        let array6:[Any] = ["a",1,true]
-        print(array6)
-        
-       //--------
-        
-        let array7 = Array(arrayLiteral: "adsf")
-        print(array7)
-        
-        let array8:[String] = Array(arrayLiteral: "adsf")
-        print(array8)
-        
-        let array9 = Array(repeating: 2, count: 3)
-        print(array9)
-        
-        //--------
-        
-        let array10 = [1,2]
-        if !array10.isEmpty {
-            print("not empty")
-        }
+        print("---")
+        print(dic2["key1"])
+        print(dic2["key1"] as Any)
+        print(dic2["key1"] as! String)
+        print(dic2["key1"]!)
+        print(dic2["key1"] ?? "bulunamadi")
         
         
-        var array11 = [3,2]
-        array11.append(1)
-        print(array11)
+        // ----------
+        
+        var dic3:[String:String] = ["key1":"value1",
+                                    "key2":"value2"]
+        
+        dic3["key3"] = "added  secondvalue"
+        print(dic3)
+        
+        dic3.updateValue("added second value", forKey: "key4")
+        print(dic3)
+        
+        
+        
+        
         
         
         
