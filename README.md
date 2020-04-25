@@ -12,3 +12,5 @@ lesson 4 - empty
 lesson 5 string, string methods
 
 lesson 6 while , repeat while
+
+lesson 7 array
