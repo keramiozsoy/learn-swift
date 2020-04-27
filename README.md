@@ -1,5 +1,7 @@
 # learn-swift
 
+every branch has different project
+
 lesson 1 println
 
 lesson 2 if
