@@ -16,3 +16,5 @@ lesson 6 while , repeat while
 lesson 7 array
 
 lesson 8 dictionary (key value store) 
+
+lesson 9 function
