@@ -14,46 +14,45 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let dic = [Int:String]()
-        print(dic)
-        
-        let dic1:[Int:String] = [Int:String]()
-        print(dic1)
-        
-        let dic2:[String:String] = ["key1":"value1",
-                                    "key2":"value2"]
-        print(dic2)
-        print(dic2.count)
-        print(dic2.keys)
-        print(dic2.values)
-        
-        print("---")
-        print(dic2["key1"])
-        print(dic2["key1"] as Any)
-        print(dic2["key1"] as! String)
-        print(dic2["key1"]!)
-        print(dic2["key1"] ?? "bulunamadi")
-        
-        
-        // ----------
-        
-        var dic3:[String:String] = ["key1":"value1",
-                                    "key2":"value2"]
-        
-        dic3["key3"] = "added  secondvalue"
-        print(dic3)
-        
-        dic3.updateValue("added second value", forKey: "key4")
-        print(dic3)
-        
-        
-        
-        
-        
-        
-        
-        
+        // 1---
+        myExample()
+        // 2---
+        myExample2(prm: "myExample2Param")
+        // 3---
+        let result3:String = myExample3(prm: "myExample3Param")
+        print(result3)
+        // 4---
+        let result4:String = myExample4(prm: "myExample4",prm2:"Param")
+        print(result4)
+        // 5---
+        let result5 = myExample5(prm: "myExample4Param")
+        print(result5.firstReturnPrm)
+        print(result5.secondReturnPrm)
 
+    }
+    
+    func myExample() {
+        print("myExample")
+    }
+    
+    func myExample2(prm:String){
+        print("myExample2")
+    }
+    
+    func myExample3(prm:String) -> String {
+        return prm
+    }
+    
+    func myExample4( prm:String, prm2:String ) -> String {
+        return prm + prm2
+    }
+    
+    func myExample5(prm:String) -> (firstReturnPrm:String,secondReturnPrm:UInt) {
+        
+        let myInt:UInt = 88
+        
+        return ( prm , myInt )
+        
     }
 
 
